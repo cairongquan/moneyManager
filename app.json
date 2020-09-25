@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/addItems/index",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MoneySee",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#4185f4",
+    "color": "#707070",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "饼图",
+      "iconPath": "/images/pae1Icon.png", 
+      "selectedIconPath": "/images/page1Aicon.png"
+    },{
+      "pagePath": "pages/addItems/index",
+      "text": "添加",
+      "iconPath": "/images/page2Icon.png",
+      "selectedIconPath": "/images/page2Aicon.png"
+    }]
+  }
+}

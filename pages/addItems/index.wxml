@@ -1,0 +1,40 @@
+<!-- index.wxml -->
+<view class="mainBox" style="height:100%">
+  <!-- 时间标题 -->
+  <view class="dateShowBox">
+    <text class="iconfont #icon-bookmark" style="color:#ffca28"></text>
+    {{dateNow}}
+  </view>
+  <!-- 添加项目区域 (表单盒) -->
+  <view class="formBox">
+    <span style="margin-right:10px">
+      <text class="iconfont #icon-attachment" style="color:red;"></text>
+      <text style="font-size:36rpx">添加消费名称:</text>
+    </span>
+    <input type="text" placeholder="名称不允许超过4个字" maxlength="4" value="{{itemName}}" bindinput="ChangeItemName"></input>
+  </view>
+  <view style="margin:5px,0;text-align:center;color:#cecece;font-size:30rpx">或者(之前的选项):</view>
+  <!-- 已有项目盒子 -->
+  <view class="itemsBox">
+    <view class="item {{item.status?'changeBgc':''}}" wx:for="{{isItems}}"  wx:for-index="index"  wx:key="index" wx:for-item="item" bindtap="itemClickEvnet" data-itemIndex = "{{index}}" data-itemName="{{item}}" >{{item.name}}</view>
+  </view>
+  <!-- 输入金额盒子 -->
+  <view class="formBox">
+    <span style="margin-right:10px">
+      <text class="iconfont #icon-Loyalty-Card" style="color:#9dbe87"></text>
+       <text style="font-size:31rpx">添加消费金额</text>
+    </span>
+    <input type="number" placeholder="输入消费金额" value="{{itemPrice}}" bindinput="changeItemPrice"></input>
+    <text>元</text>
+  </view>
+  <!-- 确认添加按钮 -->
+  <view>
+    <button class="clickBtn" bindtap="pushData">
+      <text class="iconfont #icon-plus"></text>
+      添加
+    </button>
+  </view>
+</view>
+<view>
+  <loading hidden="{{hidden}}">添加数据中...</loading>
+</view>

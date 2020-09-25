@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view >
+  <view class="box">
+    <ec-canvas ec="{{ec}}"  force-use-old-canvas="true"></ec-canvas>
+  </view>
+</view>

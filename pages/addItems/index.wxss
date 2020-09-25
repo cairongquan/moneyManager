@@ -1,0 +1,55 @@
+@import '../../iconfont.wxss';
+
+.dateShowBox{
+  text-align: center;
+  font-size: 18px;
+}
+
+.formBox{
+  width: 100%;
+  margin-top:10px ;
+  padding: 10px;
+  display: flex;
+}
+
+.itemsBox{
+  margin-top: 10px;
+  height: 100px;
+  overflow: auto;
+}
+
+.item{
+  float: left;
+  background-color:rgba(116, 165, 222,.1);
+  width: 30%;
+  margin: 5px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color:#5893d7;
+  border-radius: 4px;
+}
+
+.clickBtn{
+  margin-top: 4rem;
+  color:white;
+  background-color: rgba(55, 162, 218,.7);
+}
+
+.mainBox{
+  background-color: #fefefe;
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+input{
+  border-bottom: .6px solid #cecece;
+}
+
+.changeBgc{
+  background-color: rgba(55, 162, 218,.7);
+}
+  
+   
+
